@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: cyan;
+}
+#menu img{
+    margin-left: 2px;
+    width: 60px;
+    cursor: pointer;
+}
+#menu img:hover{
+    box-shadow: 0 0 2px white;
+}
+#menu #home{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#content{
+    transition: 500ms;   #Isso muda a velocidade do Menu#
+}
+@media screen and (max-width: 60em){
+
+#topics li{
+    list-style: none;
+    text-align: center;
+    margin: 30px;
+    height: 40px;
+    background-color: cyan;
+    line-height: 40px;
+    border-radius: 5px;
+    font-family: 'Helvetica';
+}
+}
+#topics{
+    transition: 500ms;  #Isso muda a velocidade do Menu#
+}
+@media screen and (min-width: 60em){
+#topics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#topics li{
+    list-style: none;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background-color: cyan;
+    line-height: 40px;
+    font-family: 'Helvetica';
+}
+}
+#topics li:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, black, transparent);
+}
